@@ -27,7 +27,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'pry-doc'
-  gem 'pry-debugger'
+# pry-debugger broken in ruby 2.1.0 TODO add it back in when debugger works again (usually by 2.1.x>0)
+#  gem 'pry-debugger'
   gem 'hirb'
 end
 
