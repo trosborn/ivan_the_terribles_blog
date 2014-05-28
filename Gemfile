@@ -27,7 +27,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'pry-doc'
-  gem 'pry-byebug'
   gem 'hirb'
 end
 
@@ -35,6 +34,15 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
 end
+
+gem 'ruby-prof', group: :test
+gem 'test-unit', group: :test
+
+gem 'will_paginate'
+
+gem 'rack-mini-profiler', :git => 'https://github.com/MiniProfiler/rack-mini-profiler.git'
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+  caches_page :index, :show
   def index
-    @posts = Post.all
+    @posts = Post.all(:include => :comments).page(params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

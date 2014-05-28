@@ -1,5 +1,7 @@
 <h1>Ivan the Terrible's Blog</h1>
 
+<%= will_paginate @posts %>
+
 <section class="blog">
 <% @posts.each do |post| %>
   <section class="post">
